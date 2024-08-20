@@ -1,2 +1,1 @@
-# djpruanjiansheji
-软件设计大赛作品
+软件设计大赛作品，详见master
