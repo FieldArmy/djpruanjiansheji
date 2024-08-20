@@ -1,0 +1,20 @@
+<!-- chatbot.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>志愿填报助手</title>
+</head>
+<body>
+    <h1>志愿填报助手</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="输入你的问题">
+        <button type="submit">发送</button>
+    </form>
+    
+    {% if user_input %}
+        <p>你: {{ user_input }}</p>
+        <p>小助手: {{ chat_response }}</p>
+    {% endif %}
+</body>
+</html>
